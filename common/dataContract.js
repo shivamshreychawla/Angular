@@ -11,7 +11,7 @@ function TradingServiceBaseDataContract()
    this.BaseEventClassId="";
    this.IsError=false;
   }
-
+//tyu
 function ConsumerContext()
 {
 	this.DeviceInfo="";

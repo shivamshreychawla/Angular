@@ -1,0 +1,17 @@
+<div class="main-container" ng-controller="rootCtrl">
+ <header class="header">
+        <div ng-include="'modules/rootModule/headerView.html'"></div>
+    </header>
+
+    <section class="section">
+        <div ng-include="'modules/rootModule/leftMenuView.html'"></div>
+    </section>
+
+    <aside class="container">
+        <div ng-view></div>
+    </aside>
+
+    <!-- <footer class="footer">
+        <code>&#60;footer&#62;</code>
+    </footer> -->
+</div>

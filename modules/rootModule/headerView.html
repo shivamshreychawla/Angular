@@ -1,0 +1,34 @@
+﻿<div class="content" ng-controller="headerCtrl">
+    <ul id="menu">
+         <li>
+            <a href="#/event" ng-click="nevigateto('E')">
+                    <img ng-if="SelectedTab=='E'" src="images/event-Management-selected.jpg" />
+                    <img ng-if="SelectedTab!='E'" src="images/event-Management.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="#/price" ng-click="nevigateto('P')">
+                <img ng-if="SelectedTab=='P'" src="images/price-management-selected.jpg" />
+                <img ng-if="SelectedTab!='P'" src="images/price-management.jpg" />
+            </a></li>
+        <li>
+            <a href="#/pricestream" ng-click="nevigateto('D')">
+                <img ng-if="SelectedTab=='D'" src="images/price-streams-selected.jpg" />
+                <img ng-if="SelectedTab!='D'" src="images/price-streams.jpg" />
+            </a></li>
+        <li>
+            <a href="#/refdata" ng-click="nevigateto('R')">
+                <img ng-if="SelectedTab=='R'" src="images/RefDataManagement-selected.jpg" />
+                <img ng-if="SelectedTab!='R'" src="images/RefDataManagement.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="#/admin" ng-click="nevigateto('A')">
+                <img ng-if="SelectedTab=='A'" src="images/admin-selected.jpg" />
+                 <img ng-if="SelectedTab!='A'" src="images/admin.jpg" />
+            </a></li> 
+    </ul>
+    <div class="logout">
+        <a href="#">Logout</a>
+    </div>
+</div>

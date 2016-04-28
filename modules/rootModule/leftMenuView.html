@@ -1,0 +1,8 @@
+﻿<div ng-controller="leftMenuCtrl">
+<div style="text-decoration: underline"><b><center>Select Sports</center></b></div>
+    <div class="panel-body">
+	<treecontrol class="tree-light" tree-model="treedata" on-selection="showSelected(node)">
+	     {{node.Name}}
+	  </treecontrol>
+	</div>
+</div>

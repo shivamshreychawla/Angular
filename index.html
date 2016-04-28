@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="ladbrokesMercury">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mercury</title>
+    <!-- Style sheets -->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/toastr.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet"/>
+    
+    <!--Tree Control Css-->
+    <link href="css/tree-control-attribute.css" rel="stylesheet" />
+    <link href="css/tree-control.css" rel="stylesheet"/>
+    
+    <!-- Library Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-resource.js"></script>
+    <!--<script src="js/angular-mocks.js"></script> -->
+    <script src="js/angular-route.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ui-utils.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="js/toastr.js"></script>
+    <script src="js/d3.js"></script>
+
+
+    <!--Application js Library-->
+    <script src="modules/app.js"></script>
+    <script src="modules/rootModule/loginCtrl.js"></script>
+    <script src="services/common.services.js"></script>
+    <script src="services/config.js"></script>
+    <script src="modules/rootModule/headerCtrl.js"></script>
+    <script src="modules/rootModule/leftMenuCtrl.js"></script>
+    <script src="modules/eventModule/eventClassCtrl.js"></script>
+    <script src="common/dataContract.js"></script>
+    <script src="common/helperMethods.js"></script>
+    
+    <!--Application Module Tree Library-->
+    <script src="modules/directives/pageTreeDirective.js"></script>
+    <script src="common/helperMethods.js"></script>
+</head>
+<body>
+    <div ng-controller="loginCtrl">
+        <section class="inner-container">
+            <b>Welcome! Please Login! </b>
+            <form ng-submit="authenticateUser()">
+                User Name: <input class="input login username" type="text" ng-model="username" /><br>
+                <br>
+                Password :&nbsp;&nbsp;<input class="input login password" type="password" placeholder="password" ng-model="password" /><br>
+                <br>
+                <label class="labelFontS">Forgotten your password? Email <a href="mailto:systemadministrator@ladbrokes.co.uk" taget="_top">mailto:systemadministrator@ladbrokes.co.uk</a></label>
+                <center>
+                    <input type="submit"></input></center>
+                </form>
+            </section>
+        </div>
+    </body>
+    </html>
